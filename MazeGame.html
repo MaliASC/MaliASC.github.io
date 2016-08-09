@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head>
+	<title> About me </title>
+	<link rel="stylesheet" type="text/css" href="main.
+	css">
+	<script src ="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src = "index.js"></script>
+</head>
+<body> 
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About me</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="MazeGame.html">MazeGame</a></li>
+		<!-- What user will use for input -->
+    <input placeholder='Name' type='text' id='name'>
+    <input placeholder='Comment' type='text' id='Comment'>
+    <!-- button for sending Comment to Comment board -->
+    <button onclick='sendMessage()' id='js'>SendMessage</button>
+    <!-- Empty div where the messages will show up -->
+    <div id='messageBoard'></div>
+		<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAtAW-FyNZUmYVXhf5y3nnHwP5RujH4lNM",
+    authDomain: "mlbsquad-b8171.firebaseapp.com",
+    databaseURL: "https://mlbsquad-b8171.firebaseio.com",
+    storageBucket: "mlbsquad-b8171.appspot.com",
+  };
+  firebase.initializeApp(config);
+  </script>
+		<!--<img src="http://www.clipartkid.com/images/111/fashion-hair-style-man-clip-art-at-clker-com-vector-clip-art-online-0WAO8r-clipart.png" alt="Smiley face" height="100" width="100"> -->
+	</ul>
+	<p> The Maze Game
+	</p>
+</body>
+
+</html>
+
